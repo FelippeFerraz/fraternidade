@@ -1,0 +1,18 @@
+header{
+    background: #bbbbbb; /*cor de fundo*/
+}
+
+nav li{  /*nav vem de navegação, onde estao nossas ancoras, li pq vão afetar todos itens da lista*/
+    display: inline; /*fica com menu um ao lado do outro*/
+    margin:  0 0 15px; /*espaçamento nessa ordem, primeiro topo / segundo doreita/ terceiro para baixo /quarto para a esquerda, notar tb que ele aumenta ou diminui proporcialmente devido tamanho do pixel(px) */
+ }
+
+ nav a{
+    text-transform: uppercase; /*transforma todas ancoras que estao em maiúculas*/
+    color: black;
+    font-weight: bold;/*deixa a fonte com peso, negrito*/
+    font-size: 22px; /*tamanho da font das letras nav a*/
+    text-decoration: none; /*tirou o sublinhado, deixou sem nenhuma decoração, a decoração é que deixa o texto sublinhado*/
+
+    
+ }
