@@ -1,10 +1,14 @@
 body{
    
 }
+.todo-cabecalho{
+    background: #6d6a6a;
+  
+}
 
 
-#emblemaduplo{
-    width: 30%; /*configuração da largura do elemento*/
+#emblema-sem-cor{
+    width: 25%; /*configuração da largura do elemento*/
    
 } 
 
