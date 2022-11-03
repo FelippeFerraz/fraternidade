@@ -13,7 +13,7 @@
         <header>
                 
             <div class="caixa">
-                <h1><img src="emblemasemcor.png"></h1>
+                <h1><img src="emblemasemcor.png" alt="Logo da Ordem DeMolay"></h1>
          
                 <nav>
                     <ul>
@@ -29,33 +29,80 @@
             
             <form>
                 <label for="nomesobrenome">Nome e sobrenome</label>
-                <input type="text" id="nomesobrenome"> 
+                <input type="text" id="nomesobrenome" class="input-padrao" required placeholder="Nome e Sobrenome"> 
 
                 <label for="email">Email</label>
-                <input type="text " id="email">
+                <input type="email" id="email" class="input-padrao" required placeholder="email@dominio.com">
 
                 <label for="telefone">Telefone</label>
-                <input type="number" id="telefone">
+                <input type="tel" id="telefone"  class="input-padrao" required placeholder="(xx)xxxx-xxxx">
 
                 <label for="mensagem">Mensagem</label>
-                <textarea cols="70" rows="10" id="mensagem"></textarea>
+                <textarea cols="70" rows="10" id="mensagem"  class="input-padrao" required placeholder="Deixe aqui sua mensagem"></textarea>
                 
-                <label for="radio-email">Email</label>
-                <input type="radio" value="email" id="radio-email">
+                <fieldset>
+                    <legend>Como prefere nosso contato?</legend>
+                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">📧 Email</label>
+                    
 
-                <label for="radio-telefone">Telefone</label>
-                <input type="radio" value="telefone" id="radio-telefone">
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">🖁 Telefone</label>
+                    
 
-                <label for="radio-watsapp">WhatsApp</label>
-                <input type="radio" value="whatsapp" id="radio-whatsapp">
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                    
+                
+                </fieldset>
 
-                <input type="submit" value="Enviar formulário">
+                <fieldset>
+                    <legend>Qual horário você prefere ser atendido?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+
+                    </select>
+                </fieldset>
+
+                <label><input type="checkbox" class="checkbox" checked>Gostaria de receber nossas novidades por email?</label>    
+                <input class="enviar" type="submit" value="Enviar formulário">
+                
+
+                
             </form>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <td>Dia</td>
+                        <td>Horário</td>
+                    </tr>
+                </thead>
+              
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+
+                    <tr>
+                        <td>Quarta</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sexta</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
         </main>
 
         <footer>
 
-            <img src="imagemrodape.jpeg">
+            <img src="imagemrodape.jpeg"alt="Logo ordem DeMolay">
             <p class="texto-rodape">&copy;Copyright - Ordem DeMolay para o Brasil 2022</p>
 
         </footer>
@@ -67,7 +114,59 @@
     cria um botão -><label for="radio-watsapp">WhatsApp</label>
                 <input type="radio" value="whatsapp" id="radio-whatsapp">
 
-                ''  
-    
-    
+      quando se cria um radio deve ter uma configuração para que não seja possivel marcar mais de uma posição. ex.. name="contato" nos tres inputs, pq a partir daí serão todos de um grupo, qd se marcar um, desmarcara o outro. 
+    quando queremso o input antes do label, teremos que colocar todo input dentro do label antes do texto
+
+    chamado dropdown <div>
+                    <P>Qual horário você prefere ser atendido?</P>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+
+                    </select>
+                </div>
+
+                 <input type="text" id="nomesobrenome" class="input-padrao" required placeholder="Nome e Sobrenome">  aqui mo required é para tornar esse campo obrigatório e o placeholder="nome sobrenome" é para ficar escrito ate que seja substituido.
+
+                  <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label> essa opção checked deixara o whatsapp sempre marcado como sugestão, mudando caso o usuario queira.
+                  
+                  Quando temos uma campo que se refere de apenas um assunto, tipo dados de um cartão de credito, no ludar da <div></div> será utilizado o <fieldset> </fieldset> e no lugar do paragrafo 
+                  <p> </P> será usadp a tag <legend> </legend>  
+
+                    na linha 16 -  <h1><img src="emblemasemcor.png" alt="Logo da Ordem DeMolay"></h1> adicionamos o at="" que é uma alternativa explicando de quwe se trata aquela imagem para melhor entendimento do usuario
+
+            <table>
+
+              <tr>
+                <td>Dia</td>
+                <td>Horário</td>
+              </tr>
+            </table> -> criação de uma tabela, <tr>table row que seriam as linhas e <td> são as celulas, como se fossem as colunas
+                uma tabela é separada semanticamente da seguinte forma:
+                cabeçalho ou seja o conteudo principal da tabela e utilizada a tag <thead></thead> o paragrafo de dentro do cabeçalho ao inves da tag <td></td> é utilizada a tag <th></th>
+                <thead>
+                    <tr>
+                        <td>Dia</td>
+                        <td>Horário</td>
+                    </tr>
+                </thead>
+
+                depois do cabeçakho vem o corpo indicado pala tag <tbody></tbody> a tag td continua a mesma.
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+
+                    <tr>
+                        <td>Quarta</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sexta</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+                </tbody> 
     -- >

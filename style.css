@@ -104,31 +104,52 @@ nav a:hover{ /*mapeamento, defineo comportamnetto do mouse quando esta no link "
    margin: 40px 0;/*40 px para cima e para baixo e zero para esquerda e para direita*/
  }
 
- form label{
+ form label, form legend{ /*qd queremos as mesmas configurações para mais de um elemento separamos então por virgula e adicionamos o que queremos, nesse paragrafo <p> */
    display: block; /*o block faz com que o label ocupe toda a linha*/
    font-size: 20px; /*tamanho da fonte*/
    margin:0 0 10px;/*margim para baixo de 10px*/
 
  }
 
-form input{ /*o block faz com que o input ocupe toda a linha*/
-   display: block;
+.input-padrao{ /*form input, form textarea viraram essa classe para manter essa formartação especifica para eles. Qd queremos as mesmas configurações para mais de um elemento separamos então por virgula e adicionamos o que queremos, nesse caso o textarea */
+   display: block;/*o block faz com que o input ocupe toda a linha*/
    margin: 0 0 20px;
    padding: 10px 25px;/*espaçamento interno de 10px para cima e para baixoe 20px para esquerda e direita*/
    width: 50%;/*controla largura em relação a pagina*/
 }
 
+.checkbox{
+   margin: 20px 0;/*acertou a margem 20 pixel para cima e para baixo*/
+}
+.enviar{
+   width: 40%; /*define a largura*/
+   padding: 15px 0 ; /*espaçamento interno*/
+   background: rgb(124, 124, 132); /*cor de fundo do botão enviar*/
+   color: white; /*cor das letras*/
+   font-weight: bold;/*cor negrito*/
+   border: none; /*tira a borda*/
+   font-size: 18px; /*tamanho da fonte*/
+   border-radius: 8px; /*arredonda o botão*/
+   transition: 1s all; /*background; transição de uma cor para outra no background, mudou para all que signifca todos elementos*/
+   cursor: pointer;/*muda o cursor de uma seta para mão, demonstrando que é clicavel*/
+}
 
+.enviar:hover{
+   background:rgb(61, 61, 67);
+   transform: scale(1.2);/*aumenta o item completo*/
+}
 
+   table {
+      margin: 20px 0  40px;/*espaçamento interno*/
 
+   }
+   thead{
+      background: rgb(34, 33, 33); /*cor de fundo do cabeçalho*/
+      color: white;/*cor do cabeçalho*/
+      font-size: bold;/*negrito*/
+   }
 
-
-
-
-
-
-
-
-
-
-
+   td, th { /*celulas e cabeçalho com a mesma formatação*/
+      border: 1px solid #0c0c0c;/*borda de 1 pixel, do tipo solid e da cor preta*/
+      padding: 8px 15px;b/*espaçamento interno de 8pixel para cima e para baixo e 15 pixel para os lados*/
+   }
