@@ -96,4 +96,39 @@ nav a:hover{ /*mapeamento, defineo comportamnetto do mouse quando esta no link "
 
  /*aqui começamos a produzir o css dessa parte do curso contatos*/
 
- 
+ main{
+   width: 940px; /*940 pixel de largura*/
+   margin: 0 auto; /*zero para cima e para baixo e automatico para esquerda e direita*/
+ }
+ form{
+   margin: 40px 0;/*40 px para cima e para baixo e zero para esquerda e para direita*/
+ }
+
+ form label{
+   display: block; /*o block faz com que o label ocupe toda a linha*/
+   font-size: 20px; /*tamanho da fonte*/
+   margin:0 0 10px;/*margim para baixo de 10px*/
+
+ }
+
+form input{ /*o block faz com que o input ocupe toda a linha*/
+   display: block;
+   margin: 0 0 20px;
+   padding: 10px 25px;/*espaçamento interno de 10px para cima e para baixoe 20px para esquerda e direita*/
+   width: 50%;/*controla largura em relação a pagina*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

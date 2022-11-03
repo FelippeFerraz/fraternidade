@@ -27,17 +27,30 @@
 
         <main>
             
-            <label for="nomesobrenome">Nome e sobrenome</label>
-            <input type="text" id="nomesobrenome"> 
+            <form>
+                <label for="nomesobrenome">Nome e sobrenome</label>
+                <input type="text" id="nomesobrenome"> 
 
-            <label for="email">Email</label>
-            <input type="text " id="email">
+                <label for="email">Email</label>
+                <input type="text " id="email">
 
-            <label for="telefone">Telefone</label>
-            <input type="number" id="telefone">
+                <label for="telefone">Telefone</label>
+                <input type="number" id="telefone">
 
-            <input type="submit" value="Enviar formulário">
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem"></textarea>
+                
+                <label for="radio-email">Email</label>
+                <input type="radio" value="email" id="radio-email">
 
+                <label for="radio-telefone">Telefone</label>
+                <input type="radio" value="telefone" id="radio-telefone">
+
+                <label for="radio-watsapp">WhatsApp</label>
+                <input type="radio" value="whatsapp" id="radio-whatsapp">
+
+                <input type="submit" value="Enviar formulário">
+            </form>
         </main>
 
         <footer>
@@ -49,3 +62,12 @@
 
     </dody>
 </html>
+
+<!--
+    cria um botão -><label for="radio-watsapp">WhatsApp</label>
+                <input type="radio" value="whatsapp" id="radio-whatsapp">
+
+                ''  
+    
+    
+    -- >
