@@ -25,22 +25,25 @@ nav {
 nav li{  /*nav vem de navegação, onde estao nossas ancoras, li pq vão afetar todos itens da lista*/
     display: inline; /*fica com menu um ao lado do outro*/
     margin:  0 0 0 15px; /*espaçamento nessa ordem, primeiro topo / segundo doreita/ terceiro para baixo /quarto para a esquerda, notar tb que ele aumenta ou diminui proporcialmente devido tamanho do pixel(px) */
+
  }
 
  nav a{
-    text-transform: uppercase; /*transforma todas ancoras que estao em maiúculas*/
-    color: #000000;
+    /*text-transform: uppercase; /*transforma todas ancoras que estao em maiúculas*/
+    color: #ffffff;
     font-weight: bold;/*deixa a fonte com peso, negrito*/
     font-size: 22px; /*tamanho da font das letras nav a*/
     text-decoration: none; /*tirou o sublinhado, deixou sem nenhuma decoração, a decoração é que deixa o texto sublinhado*/
-}
-nav a:hover{ 
-   color: blue;
-   text-decoration: underline;/*mapeamento, defineo comportamnetto do mouse quando esta no link "a" dntro do nav*/
-    color: midnightblue;
-    text-decoration: underline;/*estilo sublinhado voltar*/
+   }
 
-}
+nav a:hover{ 
+   color: black;
+   text-decoration: underline;/*mapeamento, defineo comportamnetto do mouse quando esta no link "a" dntro do nav*/
+    color: rgb(0, 0, 0);
+    text-decoration: underline;/*estilo sublinhado voltar*/
+    text-transform: uppercase;
+    transition: 200ms;     
+   }
 
 /*.todo-corpo{
   background: #d40000;
@@ -152,12 +155,12 @@ nav a:hover{
    border-radius: 8px; /*arredonda o botão*/
    transition: 1s all; /*background; transição de uma cor para outra no background, mudou para all que signifca todos elementos*/
    cursor: pointer;/*muda o cursor de uma seta para mão, demonstrando que é clicavel*/
-}
+   }
 
 .enviar:hover{
    background:rgb(61, 61, 67);
    transform: scale(1.2);/*aumenta o item completo*/
-}
+   }
 
    table {
       margin: 20px 0  40px;/*espaçamento interno*/
@@ -185,6 +188,7 @@ nav a:hover{
       margin: 0 0 1em; /*isso tb para que a margem seja proporcional ao tamanho da fonte*/
       clear: left;/* aqui ele esta limpando o float a esquerda left*/
       color:white;
+      text-shadow: 2px 2px rgb(149, 149, 143);
    }
    .principal{
       padding: 3em 0;
@@ -217,10 +221,10 @@ nav a:hover{
       background: linear-gradient(red, black) ;
      
    }
-.mapa-conteudo{
+   .mapa-conteudo{
    width: 940px; /*940 pixel de largura*/
    margin: 0 auto; /*zero para cima e para baixo e automatico para esquerda e direita*/
-}
+   }
 
    .mapa p{
       margin: 0 0 2em; /*margim para baixo de 2em*/
@@ -231,6 +235,7 @@ nav a:hover{
    .beneficios{
       padding:3em 0; /*espaçamento interno de 3em para cima e pra baixo e zero para os lados*/
       background:linear-gradient(#000000, red);
+     
    }
 
    .conteudo-beneficios{
@@ -250,10 +255,15 @@ nav a:hover{
    
    .imagem-beneficios{
       width: 60%;
+      opacity: 0.5;;
+     
+
    }
+   
    .imagem-beneficios:hover{
       transform: scale(1.2);/*aumenta o item completo*/
       transition: 1s;
+      opacity: 1;
    }
 
    .itens{
@@ -270,9 +280,16 @@ nav a:hover{
    .video{
       width: 560px;
       margin:2em auto;/* esse comando centrlizou o video*/
+      opacity: 0.5;
    }
+.video:hover{
+   opacity: 1;
+   transform: scale(1.2);/*aumenta o item completo*/
+   transition: 1s;
+}
+
    .img-rodape:hover{
       transform: scale(1.2);/*aumenta o item completo*/
-      transition: 2s;
+      transition: 1s;
    }
    
